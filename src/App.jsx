@@ -1,8 +1,6 @@
 import './App.css'
 
 function App() {
-const propeller = document.getElementById("propeller");
-const rotateButton = document.getElementById("rotateButton");
 const audio1 = document.getElementById("audio-1");
 const audio2 = document.getElementById("audio-2");
 const audio3 = document.getElementById("audio-3");
@@ -11,6 +9,9 @@ let isRotating = false;
 let rotationInterval;
 
 function rotatePropeller() {
+    const propeller = document.getElementById("propeller");
+    const rotateButton = document.getElementById("rotateButton");
+
     audio3.pause()
     audio3.currentTime=0
     if (!isRotating) {
@@ -42,9 +43,6 @@ function rotatePropeller() {
         <img id="propeller" src="./propeller.png" alt="Propeller"></img>
     </div>
     <button id="rotateButton" onClick={rotatePropeller}>Run</button>
-    <audio id="audio-1" src="./fan_1.mp3"></audio>
-    <audio id="audio-2" src="./fan_2.mp3"></audio>
-    <audio id="audio-3" src="./fan_3.mp3"></audio>
     </>
   )
 }
