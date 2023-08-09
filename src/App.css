@@ -1,0 +1,19 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#rotateButton {
+position: relative;
+padding: 20px;
+bottom:-100px;
+}
+
+#propeller {
+  max-width: 100%;
+  min-width: 100px;
+  transform-origin: center;
+  transition: transform 1s ease-in-out;
+}
