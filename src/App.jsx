@@ -11,8 +11,11 @@ let rotationInterval;
 function rotatePropeller() {
     const propeller = document.getElementById("propeller");
     const rotateButton = document.getElementById("rotateButton");
-
+    audio1.pause()
+    audio2.pause()
     audio3.pause()
+    audio1.currentTime = 0;
+    audio2.currentTime = 0;
     audio3.currentTime=0
     if (!isRotating) {
         audio1.play();
