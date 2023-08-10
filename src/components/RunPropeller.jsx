@@ -18,7 +18,7 @@ export default function RunPropeller() {
     audioReplay.pause()
     audioReplay.currentTime = 0
     audio1.currentTime = 0
-    audioR2.currentTime = 0
+    audio2.currentTime = 0
     if (!isRotating) {
       audio1.play()
       isRotating = true
