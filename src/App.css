@@ -1,5 +1,4 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -12,8 +11,16 @@ bottom:-100px;
 }
 
 #propeller {
-  max-width: 100%;
+  display: block;
+  max-width: 700px;
   min-width: 100px;
   transform-origin: center;
   transition: transform 1s ease-in-out;
+}
+
+.propeller--container {
+  display: flex;
+  gap:30px;
+  flex-direction: column;
+  justify-content: center;
 }
