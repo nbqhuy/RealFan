@@ -1,1 +1,1 @@
-Deplot: https://real-fan.vercel.app/
+Deploy: https://real-fan.vercel.app/
